@@ -38,4 +38,4 @@ If you are developing a production application, we recommend using TypeScript wi
 
 The website is live at: https://mahesh88971.github.io/Portfolio/
 
-Add the resume PDF as `public/Mahesh-Babu-Sanka-Resume.pdf` to enable the Resume download link.
+The downloadable resume is `public/Mahesh-Babu-Sanka-Resume-2026.pdf`.
