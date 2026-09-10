@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
+const profilePhoto = `${import.meta.env.BASE_URL}profile-photo.jpeg`
+
 const projects = [
   { number: '01', title: 'Clinic Queue & Patient Flow', category: 'AI-powered web solution', description: 'An end-to-end web application that connects responsive patient experiences with intelligent backend services for real-time flow management.', tags: ['React', 'Node.js', 'REST APIs', 'AI workflows'], link: 'https://mahesh88971.github.io/clinic-queue-and-patient-flow-management/' },
   { number: '02', title: 'Inclusive Digital Culture', category: 'Cultathon · VIT-AP University', description: 'A cultural discovery experience built around stories, literature, visual expression, and the rich identity of Indian Sign Language.', tags: ['JavaScript', 'Responsive UI', 'Digital culture'], link: 'https://github.com/Mahesh88971' },
@@ -38,14 +40,14 @@ function App() {
         <a className="wordmark" href="#home" aria-label="Mahesh Babu Sanka home">MBS<span>.</span></a>
         <button className="menu-button" type="button" aria-label="Toggle menu" onClick={() => setMenuOpen(!menuOpen)}><span /><span /></button>
         <nav className={menuOpen ? 'nav-links is-open' : 'nav-links'}>
-          <a href="#about" onClick={() => setMenuOpen(false)}>About</a><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a><a href="#contact" className="nav-contact" onClick={() => setMenuOpen(false)}>Let's talk <span>↗</span></a>
+          <a href="#about" onClick={() => setMenuOpen(false)}>About</a><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a><a href={`${import.meta.env.BASE_URL}Mahesh-Babu-Sanka-Resume.pdf`} className="nav-resume" download>Resume <span>↓</span></a><a href="#contact" className="nav-contact" onClick={() => setMenuOpen(false)}>Let's talk <span>↗</span></a>
         </nav>
       </header>
 
       <main>
         <section className="hero" id="home">
           <div className="hero-copy"><p className="eyebrow hero-eyebrow hero-load-item"><span className="status-dot" /> Available for meaningful work</p><h1 className="hero-load-item">Building digital<br /><em>experiences</em> with<br />intelligent systems.</h1><p className="hero-intro hero-load-item">I’m Mahesh, a full-stack web developer and AI engineer turning complex ideas into thoughtful, useful software.</p><a className="text-link hero-load-item" href="#projects">Explore my work <span>↓</span></a></div>
-          <div className="hero-visual hero-load-item"><div className="portrait-frame"><img src="/profile-photo.jpeg" alt="Mahesh Babu Sanka" onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'grid' }} /><div className="portrait-fallback">MBS</div></div><div className="visual-note note-top">01<br /><small>curious<br />by nature</small></div><div className="visual-note note-bottom">Scroll to<br />discover <span>↓</span></div></div>
+          <div className="hero-visual hero-load-item"><div className="portrait-frame"><img src={profilePhoto} alt="Mahesh Babu Sanka" loading="eager" onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'grid' }} /><div className="portrait-fallback">MBS</div></div><div className="visual-note note-top">01<br /><small>curious<br />by nature</small></div><div className="visual-note note-bottom">Scroll to<br />discover <span>↓</span></div></div>
         </section>
 
         <section className="intro-section reveal" id="about"><div className="section-index reveal-item">01 / 04</div><div className="intro-content"><p className="eyebrow reveal-item">A little about me</p><h2 className="reveal-item">I like the space<br />where <em>technology</em><br />meets empathy.</h2><p className="body-copy reveal-item">I am a goal-driven B.Tech Computer Science student at R K College of Engineering, Vijayawada. I build scalable full-stack applications, experiment with LLM workflows, and care about the small decisions that make software feel clear and human.</p><div className="about-stats reveal-item"><span><strong>3rd</strong> year student</span><span><strong>03</strong> certifications</span><span><strong>∞</strong> things to learn</span></div></div></section>
