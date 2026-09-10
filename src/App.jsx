@@ -40,7 +40,7 @@ function App() {
         <a className="wordmark" href="#home" aria-label="Mahesh Babu Sanka home">MBS<span>.</span></a>
         <button className="menu-button" type="button" aria-label="Toggle menu" onClick={() => setMenuOpen(!menuOpen)}><span /><span /></button>
         <nav className={menuOpen ? 'nav-links is-open' : 'nav-links'}>
-          <a href="#about" onClick={() => setMenuOpen(false)}>About</a><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a><a href={`${import.meta.env.BASE_URL}Mahesh-Babu-Sanka-Resume-2026.pdf`} className="nav-resume" download>Resume <span>↓</span></a><a href="#contact" className="nav-contact" onClick={() => setMenuOpen(false)}>Let's talk <span>↗</span></a>
+          <a href="#about" onClick={() => setMenuOpen(false)}>About</a><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a><a href="https://github.com/Mahesh88971/Portfolio/raw/refs/heads/main/public/Mahesh-Babu-Sanka-Resume-2026.pdf" className="nav-resume" download>Resume <span>↓</span></a><a href="#contact" className="nav-contact" onClick={() => setMenuOpen(false)}>Let's talk <span>↗</span></a>
         </nav>
       </header>
 
