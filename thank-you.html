@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You | Mahesh Babu Sanka</title>
+    <style>
+      :root {
+        --bg: #080a0e;
+        --panel: #111722;
+        --text: #f5f7f8;
+        --muted: #a2aab0;
+        --cyan: #5fd8e5;
+        --line: rgba(255, 255, 255, 0.12);
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at top, rgba(95,216,229,0.12), transparent 30%), var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .card {
+        width: min(90vw, 620px);
+        padding: 2.5rem 2rem;
+        border: 1px solid var(--line);
+        background: rgba(17, 23, 34, 0.85);
+        box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+        text-align: center;
+      }
+
+      .eyebrow {
+        color: var(--cyan);
+        font-size: 0.75rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        letter-spacing: -0.06em;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.8;
+        font-size: 1.05rem;
+      }
+
+      .actions {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.9rem 1.3rem;
+        border: 1px solid var(--cyan);
+        color: var(--text);
+        transition: all 0.25s ease;
+      }
+
+      a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 20px rgba(95,216,229,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="eyebrow">Message sent</div>
+      <h1>Thank you!</h1>
+      <p>Your message has been successfully delivered. I will get back to you soon.</p>
+      <div class="actions">
+        <a href="/Portfolio/">Back to portfolio</a>
+        <a href="https://wa.me/9190595812?text=Hi%20Mahesh%2C%20I%20just%20sent%20a%20message%20through%20your%20portfolio." target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </body>
+</html>
